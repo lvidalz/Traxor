@@ -1,0 +1,337 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    background: #fff;
+    height: auto;
+}
+    .header{
+        background: #efefef;    
+    }
+        .cabecera{
+            background: #0f8ed3;
+            display: flex;
+            flex-wrap: wrap;
+            height: 40px;              
+        }
+
+        .informacion{
+            background: #0f8ed3;
+            display: flex;
+            margin: 5px;
+            flex-grow: 8;
+        }
+            .telefono{
+                background:#0f8ed3;
+                margin: auto 30px;        
+            }
+
+            .telefono a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .correo{
+                background:#0f8ed3;
+                margin: auto 30px;           
+            }
+
+            .correo a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 12px;
+            }
+            .correo a:hover{
+                text-decoration: underline;
+            }
+            
+        .social{
+            background: #0f8ed3;
+            display: flex;
+            justify-content: flex-end;
+            margin: 5px;
+            margin-right: 40px;
+            flex-grow: 8;
+        }
+            .linkedin{
+                background:#0f8ed3;
+                margin: auto 15px;
+                text-align: center;
+                
+            }
+            .youtube{
+                background:#0f8ed3;
+                margin: auto 15px;
+                text-align: center;              
+            }
+@media all and (max-width:600px){
+    
+       .cabecera{
+        justify-content: center;
+        height: 100px;
+        flex-direction: column;
+                    }
+                }
+@media all and (max-width:600px){
+    
+        .informacion{
+            justify-content: center;
+            margin: auto;
+                    }
+                }
+@media all and (max-width:600px){
+    
+         .social{
+            justify-content: center;
+            margin: auto;
+                }
+                }
+@media all and (max-width:340px){
+    
+        .informacion{
+            justify-content: center;
+            margin: auto;
+            flex-direction: column;
+                           }
+                }
+
+/*Menu de navegacion con logo*/
+.navegacion{
+    width: 100%;
+    background: #efefef;
+}
+.menu{
+    height:120px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+#btn-menu{
+    display: none;
+}
+.navegacion label{
+    display:none;
+    width: 35px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color:#222831;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.menu li a:hover{
+    color: #0f8ed3;
+    text-decoration: underline;
+    
+}
+@media (max-width:1000px){
+    .navegacion label{
+        display: flex;
+        height: auto;
+        margin-bottom: 40px;
+        margin-left: 80%;
+
+    }
+    .menu{
+        position: absolute;
+        margin-top: 0px;
+        margin-left: -60%;
+        width: 60%;
+        transition: all 0.5s;
+        background: #efefef;
+        height:200px;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top:1px solid #fff;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0px;
+    }
+}
+
+.imagen{
+    width: 200px;
+    height: 0px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+@media (max-width:1000px){
+    .imagen{
+        height: 30px;
+    }
+    .imagen img{
+        width: 170px;
+        height: 95px;
+    }
+}
+/*Fin de Menu de navegacion con logo*/
+
+/*Inicio de seccion*/
+.seccion{
+    background-image: url(../imagenes/metal.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    height: 600px;
+}
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 35px;
+    border-radius: 6px;
+}
+form h2{
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background: #0f8ed3;
+    color: #fff;
+    padding: 25px;
+    transition: all 0.5s;
+    
+}
+#boton:hover{
+    cursor: pointer;
+    background: #343434;
+}
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+ 
+/*Fin de seccion*/
+
+
+/*Inicio de Pie*/
+
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #eeeeee;
+}
+.col-1{
+    margin: 5px;
+    width: 345px;
+    height: 240px;
+   
+}
+.col-1 p{
+    font-size: 14px;
+}
+.col-1 h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #0f8ed3;
+}
+.col-1 .dir-1 a{ 
+    text-decoration: none;
+}
+.col-1 .tel-1 a{ 
+    text-decoration: none;
+}
+.col-1 a{
+    font-size: 13px;
+    margin: 5px;
+    color: #343434;
+}
+.informaciones{
+    padding: 8px 0px;
+}
+.mail-1 a{
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.mail-1 a:hover{
+    color: #0f8ed3;
+    text-decoration: underline;
+}
+/*Fin de Pie*/
+
+/*Inicio de footer*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    background: #0f8ed3;
+}
+.foot-1{
+    background: #0f8ed3;
+    color: #fff;
+    margin: 5px;
+    font-size: 15px;
+    width: 510px;
+}
+.foot-1 p{
+    text-align: center;
+    margin-top: 30px;
+}
+.foot-1 a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.foot-1 a:hover{
+    color: #343434;
+    text-decoration: underline;
+}
+.foot-1 .foot-2{
+    margin: 30px;
+}
+@media (max-width:900px){
+    .footer{
+        height: auto;
+    }
+    .foot-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
